@@ -8,8 +8,8 @@
     "build:host": "tsc build/build-shell.ts --outDir dist && node dist/build-shell.js",
     "build": "npm run build:remote && npm run build:host",
     "watch": "concurrently \"npm run build:remote -- --watch\" \"npm run build:host -- --watch\"",
-    "start:remote": "live-server dist/mfe1 --port=3001 --cors",
-    "start:host": "live-server dist/shell --port=3000",
+    "start:remote": "live-server dist/mfe1 --port=3101 --cors",
+    "start:host": "live-server dist/shell --port=3100",
     "start": "concurrently \"npm run start:remote\" \"npm run start:host\""
   },
   "author": "",

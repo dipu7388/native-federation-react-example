@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 export function App() {
   return (
@@ -17,3 +18,11 @@ export function App() {
     </div>
   );
 }
+
+class Mfe1Element extends HTMLElement {
+  connectedCallback() {
+    ReactDOM.render(<App/>, this);
+  }
+}
+
+customElements.define('react-mf1', Mfe1Element);

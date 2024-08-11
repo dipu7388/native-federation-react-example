@@ -4,10 +4,10 @@ const {
 } = require("@softarc/native-federation/build");
 
 module.exports = withNativeFederation({
-  name: "mfe1",
+  name: "react-mfe1",
 
   exposes: {
-    "./component": "./mfe1/app"
+    "./component-react": "./mfe1/app"
   },
 
   shared: {
